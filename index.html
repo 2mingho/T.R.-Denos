@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>T.R. DENOS</title>
+    
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="nav-logo"><h1>T.R. DENOS</h1></div>
+
+        <div class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Excursion</a></li>
+            <li><a href="#">Booking</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+
+        <div class="nav-buttons">
+            <li><a href="#">Iniciar Sesi&oacute;n</a></li>
+            <li><a href="#" id="register-btn">Registrarse</a></li>
+        </div>
+    </header>
+
+    <section>
+        <form class="reservacion-card">
+            <h1>Contact us</h1>
+            <label for="nombre">Name</label>
+            <input type="text" id="nombre" required>
+
+            <label for="apellido">Last Name</label>
+            <input type="text" id="apellido" required>
+
+            <label for="mail">Email</label>
+            <input type="mail" id="mail" required>
+
+            <div class="adult-child">
+                <div class="child">
+                    <label for="children">Children</label>
+                    <input type="number" id="children" min="0" required>
+                </div>
+    
+                <div class="adult">
+                    <label for="adult">Adult</label>
+                    <input type="number" id="adult" min="0" required>
+                </div>
+            </div>
+
+            <label for="departure">Departure</label>
+            <input type="date" id="departure" required>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social">
+            <h1>Follow Us</h1>
+            <div class="social-icons-groups">
+                <a href="#"><img src="./img/social-icons/facebook.png" alt="facebook-icon"></a>
+                <a href="#"><img src="./img/social-icons/instagram.png" alt="instagram-icon"></a>
+                <a href="#"><img src="./img/social-icons/tiktok.png" alt="tiktok-icon"></a>
+            </div>
+        </div>
+
+        <div class="information-links">
+            <h1>Information</h1>
+            <div class="information-links-groups">
+                <a href="#">Home</a>
+                <a href="#">Excursion</a>
+                <a href="#">Booking</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="helpful-links">
+            <h1>Helpful Links</h1>
+            <div class="helpful-links-groups">
+                <a href="#">Demo1</a>
+                <a href="#">Demo2</a>
+                <a href="#">Demo3</a>
+                <a href="#">Demo4</a>
+            </div>
+        </div>
+
+        <div class="contact-links">
+            <h1>Contact</h1>
+            <div class="contact-link-groups">
+                <li>+1 (829) 999 9999</li>
+                <li>example@example.com</li>
+                <li>www.example.com</li>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
