@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
     color: black;
+    word-wrap: break-word;
+    box-sizing: border-box;
 }
 
 header {
@@ -46,8 +48,88 @@ header .nav-buttons #register-btn {
     border-radius: 15px;
 }
 
-/* Main/Section styles /*
+/* BTN styles */
+.btn {
+    margin: 30px 0;
+    padding: 5px 10px;
+    border-radius: 15px;
+    justify-content: center;
+    background-color: rgb(41, 53, 96);
+    color: aliceblue;
+}
 
+/* Main/Section styles */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background: url(../img/Sea_Beach_Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 50%;
+}
+
+section .landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+section .landing h1 {
+    margin: 20px;
+    font-size: 2.5em;
+    color: white;
+    max-width: 50%;
+    text-align: center;
+}
+
+section .travel-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+}
+
+section .travel-info .t-info {
+    margin: 5% 3%;
+}
+
+section .travel-info .t-info h2,
+section .travel-info .t-info p {
+    font-size: 0.9em;
+    padding-bottom: 2%;
+}
+
+section .travel-info .t-info p {
+    padding-top: 3%;
+}
+
+
+section .excursion {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+section .excursion .excursion-img {
+    min-width: 50%;
+    max-width: 60%;
+    background: url(../img/buggies.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+/* Codigo de Fun Park en el section aqui */
 
 /* Footer styles */
 footer {
