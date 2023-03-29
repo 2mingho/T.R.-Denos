@@ -67,8 +67,9 @@ section {
     margin: 5px;
     background: url(../img/Sea_Beach_Background.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    /* background-size: cover; */
+    /* background-position: top; */
+    background-size: 100% auto;
     height: 50%;
 }
 
@@ -110,26 +111,141 @@ section .travel-info .t-info p {
     padding-top: 3%;
 }
 
-
-section .excursion {
-    margin: 20px;
+/* excursion styles */
+.excursion {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /* align-items: center; */
-}
-
-section .excursion .excursion-img {
-    min-width: 50%;
-    max-width: 60%;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+  
+  .excursion-img {
+    width: 50%;
     background: url(../img/buggies.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: contain;
-    margin: 10px;
-    border-radius: 20px;
+    background-position: center;
+    border-radius: 20px;      
+  }
+  
+  
+  .excursion-info {
+    width: 50%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .excursion-info h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  .excursion-title {
+    color: green;
+  }
+  
+  .excursion-info p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .excursion-info-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .excursion-info-icons .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .excursion-info-btn {
+    margin: 0 auto;
+    display: block;
+    width: 60%;
+  }
+
+/* other excursion section*/
+.other-excursions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
-/* Codigo de Fun Park en el section aqui */
+.other-excursions h1 {
+  text-align: center;
+}
+
+.other-excursions .other-excursions-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.other-excursions .other-excursions-cards .card {
+  width: 300px;
+  height: 450px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.other-excursions .other-excursions-cards .card .card-img {
+  height: 45%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.other-excursions .other-excursions-cards .card .card-content {
+  height: 38%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card-btn {
+  position: relative;
+  /* bottom: 0;
+  right: 0; */
+  width: 50%;
+  height: 10%;
+  background-color: #F5F5F5;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.other-excursions .other-excursions-cards .card .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+.other-excursions .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
 
 /* Footer styles */
 footer {
@@ -218,15 +334,15 @@ footer a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    }
-    header .nav-links,
-    header .nav-buttons {
-      flex-direction: column;
-      align-items: center;
-    }
-    header .nav-buttons {
-      margin-top: 20px;
-    }
+  header {
+    flex-direction: column;
   }
+  header .nav-links,
+  header .nav-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .nav-buttons {
+    margin-top: 20px;
+  }
+}
