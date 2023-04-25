@@ -173,7 +173,7 @@ section .travel-info .t-info p {
   }
 
 /* other excursion section*/
-.other-excursions {
+/* .other-excursions {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,6 +209,22 @@ section .travel-info .t-info p {
   border-top-right-radius: 10px;
 }
 
+.other-excursions .other-excursions-cards .card1 .card-img {
+  background-image: url(../img/party_boat.jpg);
+}
+
+.other-excursions .other-excursions-cards .card2 .card-img {
+  background-image: url(../img/pool.jpg);
+}
+
+.other-excursions .other-excursions-cards .card3 .card-img {
+  background-image: url(../img/Swim-With-Dolphins-Trick-602x452.jpg);
+}
+
+.other-excursions .other-excursions-cards .card .card-content {
+
+}
+
 .other-excursions .other-excursions-cards .card .card-content {
   height: 38%;
   width: 100%;
@@ -219,8 +235,8 @@ section .travel-info .t-info p {
 
 .card-btn {
   position: relative;
-  /* bottom: 0;
-  right: 0; */
+  bottom: 0;
+  right: 0;
   width: 50%;
   height: 10%;
   background-color: #F5F5F5;
@@ -245,7 +261,84 @@ section .travel-info .t-info p {
 .other-excursions .btn:hover {
   background-color: #000;
   color: #fff;
+}*/
+
+/* ------------------------------------------------- */
+.other-excursions {
+  padding: 20px 0;
+  text-align: center;
 }
+
+.other-excursions h1 {
+  /* font-size: 32px; */
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.other-excursions-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+  overflow: hidden; 
+}
+
+.card-img {
+  height: 45%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-content {
+  height: 38%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-btn {
+  margin-top: auto;
+  width: 50%;
+  border-radius: 3px;
+  border: none;
+  background-color: #f8b400;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+/* ------------------------------------------------- */
+
 
 /* Footer styles */
 footer {
