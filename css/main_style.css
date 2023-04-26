@@ -338,7 +338,54 @@ section .travel-info .t-info p {
 }
 
 /* ------------------------------------------------- */
+.our-service {
+  display: flex;
+  flex-direction: column;
+}
 
+.our-service .our-service-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.atencion-cliente .atencion-cliente-img {
+  background: url(../img/Other-services/overtime.png) no-repeat;
+  height: 45%;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+}
+
+.calidad .calidad-img {
+  background: url(../img/Other-services/inspection.png) no-repeat;
+  height: 45%;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+}
+
+.stats .stats-img {
+  background: url(../img/Other-services/certificate.png) no-repeat;
+  height: 45%;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+}
+
+video {
+  width: 100%;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+video::-webkit-media-controls {
+  color: #fff;
+}
+
+video::-webkit-media-controls-enclosure {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
 
 /* Footer styles */
 footer {
