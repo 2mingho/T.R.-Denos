@@ -341,11 +341,20 @@ section .travel-info .t-info p {
 .our-service {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .our-service .our-service-content {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.atencion-cliente, .calidad, .stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
 }
 
 .atencion-cliente .atencion-cliente-img {
@@ -372,10 +381,17 @@ section .travel-info .t-info p {
   background-position: center;
 }
 
+/* .atencion-cliente-img, .calidad-img, .stats-img {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  margin-bottom: 10px;
+} */
+
 video {
   width: 100%;
   background-color: #333;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 video::-webkit-media-controls {
@@ -384,7 +400,7 @@ video::-webkit-media-controls {
 
 video::-webkit-media-controls-enclosure {
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 /* Footer styles */
