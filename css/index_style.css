@@ -57,7 +57,7 @@ section {
 }
 
 section form {
-    margin: 90px;
+    margin: 300px 90px 90px 90px;
     padding: 40px 50px;
     background-color: rgb(224, 237, 251);
     border-radius: 30px;
