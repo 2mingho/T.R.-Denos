@@ -343,6 +343,7 @@ video::-webkit-media-controls-enclosure {
   min-width: 250px;
   background-color: rgb(174, 200, 224);
   border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   margin: 5% 2% 5% 5%;
 }
 
