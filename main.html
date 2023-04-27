@@ -1,288 +1,330 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>T.R. DENOS</title>
 
-    <link rel="stylesheet" href="./css/main_style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header>
+      <div class="nav-logo"><h1>T.R. DENOS</h1></div>
 
-        <div class="nav-logo"><h1>T.R. DENOS</h1></div>
+      <div class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Excursion</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Contact</a></li>
+      </div>
 
-        <div class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Excursion</a></li>
-            <li><a href="#">Booking</a></li>
-            <li><a href="#">Contact</a></li>
-        </div>
-
-        <div class="nav-buttons">
-            <li><a href="#">Iniciar Sesi&oacute;n</a></li>
-            <li><a href="#" id="register-btn">Registrarse</a></li>
-        </div>
-
+      <div class="nav-buttons">
+        <li><a href="#">Iniciar Sesi&oacute;n</a></li>
+        <li><a href="#" id="register-btn">Registrarse</a></li>
+      </div>
     </header>
 
     <section>
+      <div class="landing">
+        <h1>OPT FOR YOUR BEST EXCURSIONS</h1>
+        <button class="landing-btn btn">View details</button>
+      </div>
 
-        <div class="landing">
-            <h1>OPT FOR YOUR BEST EXCURSIONS</h1>
-            <button class="landing-btn btn">View details</button>
+      <div class="travel-info">
+        <div class="location t-info">
+          <h2>Localizaci&oacute;n</h2>
+          <p>Punta Cana</p>
         </div>
-
-        <div class="travel-info">
-            <div class="location t-info">
-                <h2>Localizaci&oacute;n</h2>
-                <p>Punta Cana</p>
-            </div>
-            <div class="travel-type t-info">
-                <h2>Tipo de viaje</h2>
-                <p>Todo incluido</p>
-            </div>
-            <div class="price-range t-info">
-                <h2>Rango de Precio</h2>
-                <p>&dollar;65 - &dollar;129</p>
-            </div>
-            <button class="search-btn btn">Search</button>
+        <div class="travel-type t-info">
+          <h2>Tipo de viaje</h2>
+          <p>Todo incluido</p>
         </div>
-
-        <div class="excursion">
-            <div class="excursion-img">
-
-            </div>
-            <div class="excursion-info">
-                <h1>FUN <span class="excursion-title">PARK</span></h1>
-                <p>Adventure-lovers will enjoy a full day in the fun park on this multi-activity tour from Punta Cana. Booking all of these activities separately would be a budget and time drain: this package includes them all and arranges the details for you. Enjoy horseback riding, driving a dune buggy, visiting a local farm and riding a zipline through the forest canopy. All activities included per itinerary.</p>
-                <div class="excursion-info-icons">
-                    <div class="safari icon">
-                        <img src="./img/excursion icon/check_black.png" alt="safari_check">
-                        <h3>Safari</h3>
-                    </div>
-                    <div class="zipline icon">
-                        <img src="./img/excursion icon/check_green.png" alt="Zipline_check">
-                        <h3>Zipline</h3>
-                    </div>
-                    <div class="buggies icon">
-                        <img src="./img/excursion icon/check_red.png" alt="Buggies_check">
-                        <h3>Buggies</h3>
-                    </div>
-                </div>
-                <button class="excursion-info-btn btn">View details</button>
-            </div>
+        <div class="price-range t-info">
+          <h2>Rango de Precio</h2>
+          <p>&dollar;65 - &dollar;129</p>
         </div>
+        <button class="search-btn btn">Search</button>
+      </div>
 
-        <!-- <div class="other-excursions">
-            <h1>Other Excursions</h1>
-            <div class="other-excursions-cards">
-                <div class="card card1">
-                    <div class="card-img"></div>
-                    <div class="card-content"></div>
-                    <button class="card-btn btn">View details</button>
-                </div>
-
-                <div class="card card2">
-                    <div class="card-img"></div>
-                    <div class="card-content"></div>
-                    <button class="card-btn btn">View details</button>
-                </div>
-                
-                <div class="card card3">
-                    <div class="card-img"></div>
-                    <div class="card-content"></div>
-                    <button class="card-btn btn">View details</button>
-                </div>
+      <div class="excursion">
+        <div class="excursion-img"></div>
+        <div class="excursion-info">
+          <h1>FUN <span class="excursion-title">PARK</span></h1>
+          <p>
+            Adventure-lovers will enjoy a full day in the fun park on this
+            multi-activity tour from Punta Cana. Booking all of these activities
+            separately would be a budget and time drain: this package includes
+            them all and arranges the details for you. Enjoy horseback riding,
+            driving a dune buggy, visiting a local farm and riding a zipline
+            through the forest canopy. All activities included per itinerary.
+          </p>
+          <div class="excursion-info-icons">
+            <div class="safari icon">
+              <img
+                src="./img/excursion icon/check_black.png"
+                alt="safari_check"
+              />
+              <h3>Safari</h3>
             </div>
-        </div> -->
+            <div class="zipline icon">
+              <img
+                src="./img/excursion icon/check_green.png"
+                alt="Zipline_check"
+              />
+              <h3>Zipline</h3>
+            </div>
+            <div class="buggies icon">
+              <img
+                src="./img/excursion icon/check_red.png"
+                alt="Buggies_check"
+              />
+              <h3>Buggies</h3>
+            </div>
+          </div>
+          <button class="excursion-info-btn btn">View details</button>
+        </div>
+      </div>
 
-        <div class="other-excursions">
-            <h1>Other Excursions</h1>
-            <div class="other-excursions-cards">
-              <div class="card card1">
-                <div class="card-img"><img src="https://via.placeholder.com/300x300" alt="Excursion Image"></div>
-                <div class="card-content">
-                  <div class="card-text">
-                    <p>$50</p>
-                    <button class="card-btn btn">Pay Now</button>
-                  </div>
-                  <h2>Excursion Title</h2>
-                  <div class="card-info">
-                    <div class="card-info-item">
-                      <p>Location:</p>
-                      <p>Desert</p>
-                    </div>
-                    <div class="card-info-item">
-                      <p>Duration:</p>
-                      <p>2 hours</p>
-                    </div>
-                    <div class="card-info-item">
-                      <p>Difficulty:</p>
-                      <p>Medium</p>
-                    </div>
-                  </div>
-                </div>
+      <div class="other-excursions">
+        <h1>Other Excursions</h1>
+        <div class="other-excursions-cards">
+          <div class="card card1">
+            <div class="card-img">
+              <img
+                src="https://via.placeholder.com/300x300"
+                alt="Excursion Image"
+              />
+            </div>
+            <div class="card-content">
+              <div class="card-text">
+                <p>$50</p>
+                <button class="card-btn btn">Pay Now</button>
               </div>
-          
-              <div class="card card2">
-                <div class="card-img"><img src="https://via.placeholder.com/300x300" alt="Excursion Image"></div>
-                <div class="card-content">
-                  <div class="card-text">
-                    <p>$75</p>
-                    <button class="card-btn btn">Pay Now</button>
-                  </div>
-                  <h2>Excursion Title</h2>
-                  <div class="card-info">
-                    <div class="card-info-item">
-                      <p>Location:</p>
-                      <p>Mountain</p>
-                    </div>
-                    <div class="card-info-item">
-                      <p>Duration:</p>
-                      <p>4 hours</p>
-                    </div>
-                    <div class="card-info-item">
-                      <p>Difficulty:</p>
-                      <p>Hard</p>
-                    </div>
-                  </div>
+              <h2>Excursion Title</h2>
+              <div class="card-info">
+                <div class="card-info-item">
+                  <p>Location:</p>
+                  <p>Desert</p>
                 </div>
-              </div>
-              
-              <div class="card card3">
-                <div class="card-img"><img src="https://via.placeholder.com/300x300" alt="Excursion Image"></div>
-                <div class="card-content">
-                  <div class="card-text">
-                    <p>$30</p>
-                    <button class="card-btn btn">Pay Now</button>
-                  </div>
-                  <h2>Excursion Title</h2>
-                  <div class="card-info">
-                    <div class="card-info-item">
-                      <p>Location:</p>
-                      <p>Beach</p>
-                    </div>
-                    <div class="card-info-item">
-                      <p>Duration:</p>
-                      <p>1 hour</p>
-                    </div>
-                    <div class="card-info-item">
-                      <p>Difficulty:</p>
-                      <p>Easy</p>
-                    </div>
-                  </div>
+                <div class="card-info-item">
+                  <p>Duration:</p>
+                  <p>2 hours</p>
+                </div>
+                <div class="card-info-item">
+                  <p>Difficulty:</p>
+                  <p>Medium</p>
                 </div>
               </div>
             </div>
           </div>
-          
 
-        <div class="our-service">`
-          <h2>Our Service</h2>
-          <div class="our-service-content">
-              <div class="atencion-cliente">
-                <div class="atencion-cliente-img"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptates, beatae similique officia ratione blanditiis, corrupti dignissimos id perspiciatis cum amet autem omnis sed natus nobis.</p>
+          <div class="card card2">
+            <div class="card-img">
+              <img
+                src="https://via.placeholder.com/300x300"
+                alt="Excursion Image"
+              />
+            </div>
+            <div class="card-content">
+              <div class="card-text">
+                <p>$75</p>
+                <button class="card-btn btn">Pay Now</button>
               </div>
-              <div class="calidad">
-                <div class="calidad-img"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptates, beatae similique officia ratione blanditiis, corrupti dignissimos id perspiciatis cum amet autem omnis sed natus nobis.</p>
+              <h2>Excursion Title</h2>
+              <div class="card-info">
+                <div class="card-info-item">
+                  <p>Location:</p>
+                  <p>Mountain</p>
+                </div>
+                <div class="card-info-item">
+                  <p>Duration:</p>
+                  <p>4 hours</p>
+                </div>
+                <div class="card-info-item">
+                  <p>Difficulty:</p>
+                  <p>Hard</p>
+                </div>
               </div>
-              <div class="stats">
-                <div class="stats-img"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptates, beatae similique officia ratione blanditiis, corrupti dignissimos id perspiciatis cum amet autem omnis sed natus nobis.</p>
+            </div>
+          </div>
+
+          <div class="card card3">
+            <div class="card-img">
+              <img
+                src="https://via.placeholder.com/300x300"
+                alt="Excursion Image"
+              />
+            </div>
+            <div class="card-content">
+              <div class="card-text">
+                <p>$30</p>
+                <button class="card-btn btn">Pay Now</button>
               </div>
+              <h2>Excursion Title</h2>
+              <div class="card-info">
+                <div class="card-info-item">
+                  <p>Location:</p>
+                  <p>Beach</p>
+                </div>
+                <div class="card-info-item">
+                  <p>Duration:</p>
+                  <p>1 hour</p>
+                </div>
+                <div class="card-info-item">
+                  <p>Difficulty:</p>
+                  <p>Easy</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="media">
-          <video controls>
-            <source src="./img/videos/This Is Punta Cana - Dominican Republic.mp4" type="video/mp4">
-            Tu navegador no soporta la etiqueta de video.
-          </video>
+      <div class="our-service">
+        `
+        <h1>Our Service</h1>
+        <div class="our-service-content">
+          <div class="atencion-cliente">
+            <img
+              class="our-service-img"
+              src="../img/Other-services/overtime.png"
+              alt="Overtime"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              voluptates, beatae similique officia ratione blanditiis, corrupti
+              dignissimos id perspiciatis cum amet autem omnis sed natus nobis.
+            </p>
+          </div>
+          <div class="calidad">
+            <img
+              class="our-service-img"
+              src="../img/Other-services/inspection.png"
+              alt="inspection"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              voluptates, beatae similique officia ratione blanditiis, corrupti
+              dignissimos id perspiciatis cum amet autem omnis sed natus nobis.
+            </p>
+          </div>
+          <div class="stats">
+            <img
+              class="our-service-img"
+              src="../img/Other-services/certificate.png"
+              alt="certificate"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              voluptates, beatae similique officia ratione blanditiis, corrupti
+              dignissimos id perspiciatis cum amet autem omnis sed natus nobis.
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div class="contact">
-            <h1>Contact</h1>
-            <div class="contact-info">
-                <div class="contact-img"></div>
-                <div class="contact-info-content">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est numquam quos, repellat nemo nisi inventore aliquid, reiciendis aliquam saepe harum laboriosam! Tenetur iusto, harum, necessitatibus officiis itaque debitis minima similique dolore numquam natus quia? Quaerat reiciendis fugit quis ad iste. Eaque, facilis reiciendis! Facilis perferendis aspernatur rem iste error enim dicta consequuntur neque, a ea recusandae dolore, ut velit aut officiis, vel impedit? Voluptate iste rerum aperiam quia illo. Aperiam.</p>
-                </div>
-            </div>
-            <form class="contact-me">
-                <h1>Contact Me</h1>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="nombre" required>
-                </div>
+      <div class="media">
+        <video controls>
+          <source
+            src="./img/videos/This Is Punta Cana - Dominican Republic.mp4"
+            type="video/mp4"
+          />
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="mail" id="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea rows="6" cols="40"></textarea>
-                </div>
-
-                <button class="contact-me-send btn"></button>
-            </form>
+      <div class="contact">
+        <div class="contact-info">
+          <h1>Contact</h1>
+          <div class="contact-info-content">
+            <div class="contact-img"></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+              numquam quos, repellat nemo nisi inventore aliquid, reiciendis
+              aliquam saepe harum laboriosam! Tenetur iusto, harum,
+              necessitatibus officiis itaque debitis minima similique dolore
+              numquam natus quia? Quaerat reiciendis fugit quis ad iste. Eaque,
+              facilis reiciendis! Facilis perferendis aspernatur rem iste error
+              enim dicta consequuntur neque, a ea recusandae dolore, ut velit
+              aut officiis, vel impedit? Voluptate iste rerum aperiam quia illo.
+              Aperiam.
+            </p>
+          </div>
         </div>
+        <form class="contact-me">
+          <h1>Contact Me</h1>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="nombre" required />
+          </div>
 
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="mail" id="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea rows="6" cols="40"></textarea>
+          </div>
+
+          <button class="contact-me-send btn">Send</button>
+        </form>
+      </div>
     </section>
 
     <footer>
-
-        <div class="social">
-            <h1>Follow Us</h1>
-            <div class="social-icons-groups">
-                <a href="#"><img src="./img/social-icons/facebook.png" alt="facebook-icon"></a>
-                <a href="#"><img src="./img/social-icons/instagram.png" alt="instagram-icon"></a>
-                <a href="#"><img src="./img/social-icons/tiktok.png" alt="tiktok-icon"></a>
-            </div>
+      <div class="social">
+        <h1>Follow Us</h1>
+        <div class="social-icons-groups">
+          <a href="#"
+            ><img src="./img/social-icons/facebook.png" alt="facebook-icon"
+          /></a>
+          <a href="#"
+            ><img src="./img/social-icons/instagram.png" alt="instagram-icon"
+          /></a>
+          <a href="#"
+            ><img src="./img/social-icons/tiktok.png" alt="tiktok-icon"
+          /></a>
         </div>
+      </div>
 
-        <div class="information-links">
-            <h1>Information</h1>
-            <div class="information-links-groups">
-                <a href="#">Home</a>
-                <a href="#">Excursion</a>
-                <a href="#">Booking</a>
-                <a href="#">Contact</a>
-            </div>
+      <div class="information-links">
+        <h1>Information</h1>
+        <div class="information-links-groups">
+          <a href="#">Home</a>
+          <a href="#">Excursion</a>
+          <a href="#">Booking</a>
+          <a href="#">Contact</a>
         </div>
+      </div>
 
-        <div class="helpful-links">
-            <h1>Helpful Links</h1>
-            <div class="helpful-links-groups">
-                <a href="#">Demo1</a>
-                <a href="#">Demo2</a>
-                <a href="#">Demo3</a>
-                <a href="#">Demo4</a>
-            </div>
+      <div class="helpful-links">
+        <h1>Helpful Links</h1>
+        <div class="helpful-links-groups">
+          <a href="#">Demo1</a>
+          <a href="#">Demo2</a>
+          <a href="#">Demo3</a>
+          <a href="#">Demo4</a>
         </div>
+      </div>
 
-        <div class="contact-links">
-            <h1>Contact</h1>
-            <div class="contact-link-groups">
-                <li>+1 (829) 999 9999</li>
-                <li>example@example.com</li>
-                <li>www.example.com</li>
-            </div>
+      <div class="contact-links">
+        <h1>Contact</h1>
+        <div class="contact-link-groups">
+          <li>+1 (829) 999 9999</li>
+          <li>example@example.com</li>
+          <li>www.example.com</li>
         </div>
-
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
