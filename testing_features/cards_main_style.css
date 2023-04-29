@@ -1,0 +1,71 @@
+.max-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container {
+    display: grid;
+
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-areas: 
+    "picture picture"
+    "picture picture"
+    "picture picture"
+    "price btn-pay"
+    "btn-1 btn-2"
+    "btn-3 btn-4"
+    "btn-5 btn-6"
+    ;
+
+}
+
+img {
+    width: 100%;
+}
+
+.card-picture {
+    grid-area: picture;
+}
+
+.card-price {
+    grid-area: price;
+}
+
+.card-pay {
+    grid-area: btn-pay;
+}
+
+.btn-1 {
+    grid-area: btn-1;
+    margin: auto;
+}
+
+.btn-2 {
+    grid-area: btn-2;
+    margin: auto;
+}
+
+.btn-3 {
+    grid-area: btn-3;
+    margin: auto;
+}
+
+.btn-4 {
+    grid-area: btn-4;
+    margin: auto;
+}
+
+.btn-5 {
+    grid-area: btn-5;
+    margin: auto;
+}
+
+.btn-6 {
+    grid-area: btn-6;
+    margin: auto;
+}
