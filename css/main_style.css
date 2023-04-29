@@ -178,23 +178,86 @@ section .travel-info .t-info p {
 
 /* ------------------------------------------------- */
 .other-excursions {
+  display: flex;
+  flex-direction: column;
+  height: 45%;
   padding: 20px 0;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.other-excursions-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* margin: 40px; */
+  gap: 5px;
 }
 
 .other-excursions h1 {
   font-size: 2.3rem;
   font-weight: 700;
   margin-bottom: 30px;
+  text-align: center;
 }
 
-.other-excursions-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+/* -------- New Card Code -------- */
+.card { /* Container */
+  display: grid;
 
-  margin-top: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+
+  grid-template-areas: 
+  "img img"
+  "img img"
+  "img img"
+  "price pay"
+  "title title"
+  "person kids"
+  "couple ."
+  ". details"
+  ;
 }
+
+.card1-img { /* Imagen del container */
+  grid-area: img;
+}
+
+.price {
+  grid-area: price;
+}
+
+.card1-btn {
+  grid-area: pay;
+}
+
+.title {
+  grid-area: title;
+}
+
+.person {
+  grid-area: person;
+}
+
+.kids {
+  grid-area: kids;
+}
+
+.couple {
+  grid-area: couple;
+}
+
+.details-btn {
+  grid-area: details;
+}
+
+/* ------------------------------- */
+/* 
+
+
 
 .card {
   background-color: #fff;
@@ -248,7 +311,7 @@ section .travel-info .t-info p {
   padding: 10px;
   cursor: pointer;
   align-self: flex-end;
-}
+} */
 
 /* ------------------------------------------------- */
 .our-service {
