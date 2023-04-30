@@ -203,8 +203,8 @@ section .travel-info .t-info p {
   text-align: center;
 }
 
-/* -------- New Card Code -------- */
-.card { /* Container */
+/* -------- New Card Code -------- 
+.card { 
   display: grid;
 
   grid-template-columns: repeat(2, 1fr);
@@ -213,17 +213,23 @@ section .travel-info .t-info p {
   grid-template-areas: 
   "img img"
   "img img"
-  "img img"
+  ". ."
   "price pay"
   "title title"
   "person kids"
   "couple ."
   ". details"
   ;
+
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 30%;
+  max-height: 500px;
 }
 
-.card1-img { /* Imagen del container */
+.card1-img {
   grid-area: img;
+  width: 100%;
 }
 
 .price {
@@ -254,7 +260,7 @@ section .travel-info .t-info p {
   grid-area: details;
 }
 
-/* ------------------------------- */
+ ------------------------------- */
 /* 
 
 
@@ -376,7 +382,8 @@ video::-webkit-media-controls-enclosure {
 }
 
 /* Contact Area Styles */
-.contact, .contact-info {
+.contact,
+.contact-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -560,5 +567,76 @@ footer a:hover {
   }
   header .nav-buttons {
     margin-top: 20px;
+  }
+}
+
+/* ------------------------------------------------------------------- */
+.other-excursions-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card1-img {
+  width: 100%;
+  max-height: 45%;
+  object-fit: cover;
+}
+
+.price {
+  flex: 1;
+  margin: 10px 0;
+}
+
+.card1-btn {
+  flex: 1;
+  margin: 10px;
+}
+
+.title {
+  flex: 1;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.person,
+.kids {
+  /* flex: 1; */
+  margin: 10px;
+  width: 50%;
+}
+
+.couple {
+  /* flex: 1; */
+  margin: 10px;
+  width: 50%;
+}
+
+.details-btn {
+  align-self: flex-end;
+  margin: 0;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .person,
+  .kids {
+    width: 100%;
+  }
+
+  .couple {
+    width: 100%;
   }
 }
