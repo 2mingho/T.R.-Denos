@@ -1,5 +1,3 @@
-/* Header styles */
-
 * {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -9,6 +7,7 @@
   box-sizing: border-box;
 }
 
+/* Header styles */
 header {
   display: flex;
   flex-direction: row;
@@ -50,7 +49,7 @@ header .nav-buttons #register-btn {
 
 /* BTN styles */
 .btn {
-  margin: 30px 0;
+  /* margin: 30px 0; */
   padding: 5px 10px;
   border-radius: 15px;
   justify-content: center;
@@ -66,6 +65,7 @@ section {
   align-items: center;
   margin: 5px;
   background: url(../img/Sea_Beach_Background.jpg);
+  background-color: rgb(137, 179, 216);
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: 50%;
@@ -76,7 +76,7 @@ section .landing {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 50px;
+  margin: 40px;
 }
 
 section .landing h1 {
@@ -85,6 +85,15 @@ section .landing h1 {
   color: white;
   max-width: 50%;
   text-align: center;
+}
+
+.landing-btn {
+  padding: 15px 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 section .travel-info {
@@ -114,16 +123,21 @@ section .travel-info .t-info p {
 
 .search-btn {
   height: 40%;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
-/* excursion styles */
+/*  styles */
 .excursion {
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
   margin-bottom: 40px;
-  padding-left: 10px;
-  padding-right: 20px;
+  padding: 10px 20px 10px 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  background-color: rgba(200, 211, 252, 0.658);
 }
 
 .excursion-img {
@@ -174,9 +188,14 @@ section .travel-info .t-info p {
   margin: 0 auto;
   display: block;
   width: 60%;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
-/* ------------------------------------------------- */
+/* other excursion styles */
 .other-excursions {
   display: flex;
   flex-direction: column;
@@ -184,7 +203,6 @@ section .travel-info .t-info p {
   padding: 20px 0;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
 }
 
 .other-excursions-cards {
@@ -192,7 +210,6 @@ section .travel-info .t-info p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* margin: 40px; */
   gap: 5px;
 }
 
@@ -203,123 +220,95 @@ section .travel-info .t-info p {
   text-align: center;
 }
 
-/* -------- New Card Code -------- 
-.card { 
+/* other excursions-cards styles */
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(33% - 15px);
+  /* border: #333 1px solid; */
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  background-color: aliceblue;
+}
+
+.test-img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.test-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.test-price {
+  margin: 10px 0 0 0;
+  padding: 5px 15px;
+  font-size: 1.4rem;
+}
+
+.test-btn {
+  margin: 10px 0 0 0;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: rgb(224, 12, 12);
+  border: none;
+  border-radius: 5px;
+}
+
+.test-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.test-details {
   display: grid;
 
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 
-  grid-template-areas: 
-  "img img"
-  "img img"
-  ". ."
-  "price pay"
-  "title title"
-  "person kids"
-  "couple ."
-  ". details"
-  ;
+  grid-template-areas:
+    "person kids"
+    "couple .";
 
-  background-color: #fff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  max-width: 30%;
-  max-height: 500px;
+    margin: 2px;
 }
 
-.card1-img {
-  grid-area: img;
-  width: 100%;
-}
-
-.price {
-  grid-area: price;
-}
-
-.card1-btn {
-  grid-area: pay;
-}
-
-.title {
-  grid-area: title;
-}
-
-.person {
-  grid-area: person;
-}
-
-.kids {
-  grid-area: kids;
-}
-
-.couple {
-  grid-area: couple;
-}
-
-.details-btn {
-  grid-area: details;
-}
-
- ------------------------------- */
-/* 
-
-
-
-.card {
-  background-color: #fff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin: 10px;
-  width: calc(33.33% - 20px);
-  overflow: hidden;
-}
-
-.card-img {
-  height: 45%;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.card-content {
-  height: 38%;
-  width: 100%;
-  padding: 20px;
+.test-person,
+.test-kids,
+.test-couple {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  box-sizing: border-box;
-  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 20px;
+  margin: 3px 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  place-self: center;
+  background-color: rgb(214, 233, 250);
+  border-radius: 15px;
 }
 
-.card-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.card-btn {
-  margin-top: auto;
-  width: 50%;
-  border-radius: 3px;
-  border: none;
-  background-color: #f8b400;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 10px;
-  cursor: pointer;
+.test-details-btn {
   align-self: flex-end;
-} */
+  margin: 0;
+  padding: 10px 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 0 0 8px 0;
+}
 
-/* ------------------------------------------------- */
+/* our service style */
 .our-service {
   display: flex;
   flex-direction: column;
@@ -358,6 +347,7 @@ section .travel-info .t-info p {
   margin-bottom: 10%;
 }
 
+/* video styles */
 .media {
   display: flex;
   justify-content: center;
@@ -417,7 +407,7 @@ video::-webkit-media-controls-enclosure {
   margin: 5% 2% 5% 5%;
 }
 
-/* Contact Form */
+/* Contact Form styles */
 .contact-me {
   width: 65%;
   margin: 90px 250px;
@@ -464,10 +454,13 @@ video::-webkit-media-controls-enclosure {
   min-width: 40%;
   max-width: 60%;
   padding: 5px 10px;
+  border: none;
   border-radius: 15px;
   background-color: rgb(41, 53, 96);
   color: aliceblue;
+  font-size: 0.9rem;
   font-weight: 700;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 /* Footer styles */
@@ -527,6 +520,7 @@ footer .helpful-links-groups a {
   text-decoration: none;
 }
 
+/* hover styles */
 header .nav-links a:hover {
   color: blue;
 }
@@ -542,20 +536,17 @@ header .nav-buttons #register-btn:hover {
   color: white;
 }
 
+footer a:hover {
+  color: blue;
+}
+
+/* transitions styles */
 header .nav-links a,
 header .nav-buttons a {
   transition: all 0.3s ease;
 }
 
-section form button:hover {
-  background-color: rgb(73, 95, 172);
-  color: white;
-}
-
-footer a:hover {
-  color: blue;
-}
-
+/* media queries */
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
@@ -567,76 +558,5 @@ footer a:hover {
   }
   header .nav-buttons {
     margin-top: 20px;
-  }
-}
-
-/* ------------------------------------------------------------------- */
-.other-excursions-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  width: calc(33.33% - 10px);
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  overflow: hidden;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.card1-img {
-  width: 100%;
-  max-height: 45%;
-  object-fit: cover;
-}
-
-.price {
-  flex: 1;
-  margin: 10px 0;
-}
-
-.card1-btn {
-  flex: 1;
-  margin: 10px;
-}
-
-.title {
-  flex: 1;
-  margin: 10px 0;
-  padding: 5px;
-}
-
-.person,
-.kids {
-  /* flex: 1; */
-  margin: 10px;
-  width: 50%;
-}
-
-.couple {
-  /* flex: 1; */
-  margin: 10px;
-  width: 50%;
-}
-
-.details-btn {
-  align-self: flex-end;
-  margin: 0;
-  border-radius: 5px;
-}
-
-@media (max-width: 768px) {
-  .person,
-  .kids {
-    width: 100%;
-  }
-
-  .couple {
-    width: 100%;
   }
 }
