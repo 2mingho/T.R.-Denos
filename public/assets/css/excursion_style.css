@@ -1,0 +1,270 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(217, 231, 249);
+}
+
+header .nav-links,
+header .nav-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+header .nav-links a,
+header .nav-links li,
+header .nav-buttons a,
+header .nav-buttons li{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header .nav-buttons a,
+header .nav-buttons li {
+    padding: 5px;
+}
+
+header .nav-links a {
+    font-weight: 700;
+}
+
+header .nav-buttons #register-btn {
+    padding: 10px;
+    background-color: rgb(122, 212, 200);
+    border-radius: 15px;
+}
+
+/* BTN styles */
+.btn {
+  padding: 5px 10px;
+  border-radius: 15px;
+  justify-content: center;
+  background-color: rgb(41, 53, 96);
+  color: aliceblue;
+}
+
+/* ----------------------------------------------------- */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 20px;
+}
+
+/* other excursions-cards styles */
+.card {
+  display: flex;
+  flex-direction: column;
+  /* max-width: calc(33% - 15px); */
+  /* border: #333 1px solid; */
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  background-color: aliceblue;
+}
+
+.test-img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.test-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.test-price {
+  margin: 10px 0 0 0;
+  padding: 5px 15px;
+  font-size: 1.4rem;
+}
+
+.test-btn {
+  margin: 10px 0 0 0;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: rgb(224, 12, 12);
+  border: none;
+  border-radius: 5px;
+}
+
+.test-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.test-details {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  grid-template-areas:
+    "person kids"
+    "couple .";
+
+    margin: 2px;
+}
+
+.test-person,
+.test-kids,
+.test-couple {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 20px;
+  margin: 3px 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  place-self: center;
+  background-color: rgb(214, 233, 250);
+  border-radius: 15px;
+}
+
+.test-details-btn {
+  align-self: flex-end;
+  margin: 0;
+  padding: 10px 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 0 0 8px 0;
+}
+
+/* ----------------------------------------------------- */
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+  
+
+/* ----------------------------------------------------- */
+
+footer {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(217, 231, 249);
+}
+
+footer .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+footer .information-links,
+footer .helpful-links,
+footer .contact-links {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .social h1,
+footer .information-links h1,
+footer .helpful-links h1,
+footer .contact-links h1 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+footer .social .social-icons-groups {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .social .social-icons-groups img {
+    width: 40px;
+}
+
+footer .information-links .information-links-groups,
+footer .helpful-links .helpful-links-groups,
+footer .contact-links .contact-link-groups {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .contact-links .contact-link-groups li {
+    list-style-type: none;
+}
+
+footer .information-links a,
+footer .helpful-links-groups a {
+    text-decoration: none;
+}
+
+header .nav-links a:hover {
+    color: blue;
+}
+  
+header .nav-buttons a:hover {
+    padding: 10px;
+    background-color: rgb(122, 212, 200);
+    border-radius: 15px;
+}
+
+header .nav-buttons #register-btn:hover {
+    background-color: rgb(92, 161, 151);
+    color: white;
+}
+
+header .nav-links a,
+header .nav-buttons a {
+  transition: all 0.3s ease;
+}
+
+section form button:hover {
+    background-color: rgb(73, 95, 172);
+    color: white;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+    header .nav-links,
+    header .nav-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    header .nav-buttons {
+      margin-top: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    section form {
+      margin: 30px;
+      padding: 20px;
+    }
+    .adult-child {
+      flex-direction: column;
+    }
+  }

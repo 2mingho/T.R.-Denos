@@ -1,0 +1,32 @@
+    <section>
+        <form class="reservacion-card">
+            <h1>Booking</h1>
+            <label for="nombre">Name</label>
+            <input type="text" id="nombre" required>
+
+            <label for="apellido">Last Name</label>
+            <input type="text" id="apellido" required>
+
+            <label for="mail">Email</label>
+            <input type="mail" id="mail" required>
+
+            <div class="adult-child">
+                <div class="child">
+                    <label for="children">Children</label>
+                    <input type="number" id="children" min="0" required>
+                </div>
+    
+                <div class="adult">
+                    <label for="adult">Adult</label>
+                    <input type="number" id="adult" min="0" required>
+                </div>
+            </div>
+
+            <label for="departure">Departure</label>
+            <input type="date" id="departure" required>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+   
